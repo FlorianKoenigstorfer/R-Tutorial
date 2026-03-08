@@ -1,0 +1,10 @@
+# R Package Requirements
+# Install all packages by running the following command in R:
+# install.packages(c("tidyverse", "stargazer", "car", "caTools", "caret", "MASS"))
+
+tidyverse   # Used in all scripts: data manipulation (dplyr) and visualisation (ggplot2)
+stargazer   # Used in 02 & 03: formatted regression output tables
+car         # Used in 02 & 03: regression diagnostics (VIF, outlier tests)
+caTools     # Used in 02 & 03: train/test splitting (sample.split)
+caret       # Used in 03: k-fold cross-validation (createFolds)
+MASS        # Used in 03: statistical methods (chi-squared test support)

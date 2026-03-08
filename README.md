@@ -11,9 +11,25 @@ This repository contains the R code used in the course **"Data Driven Decision S
 
 ---
 
+## Usage
+
+To run the code in this repository, follow these steps:
+
+1. **Download the repository** – Download the repository as a ZIP file using the *Code → Download ZIP* button on GitHub.
+2. **Unzip the files** – Extract the contents of the ZIP file to a folder of your choice.
+3. **Install required libraries** – Open R or RStudio and install all required packages before running the scripts. The main dependencies are:
+   ```r
+   install.packages(c("tidyverse", "caTools", "caret", "stargazer", "car"))
+   ```
+4. **Run the R scripts** – Open the scripts in RStudio and run them in order (01 → 02 → 03), as each script builds on the output of the previous one.
+
+---
+
 ## Files
 
-### `01 BANDAS - Exploratory Data Analysis.R`
+### `01_Exploratory_Data_Analysis.R`
+
+> The core concepts covered in this script are explained in the accompanying presentation **`01_DataVisualization.pdf`**.
 
 This script introduces students to visual data exploration using the raw dataset. It demonstrates how to detect potential data quality issues and understand relationships between variables before modelling.
 
@@ -26,7 +42,10 @@ The script covers:
 5. **Faceted histograms** – Displays the distribution of `totalRent` separately for each heating type, using `facet_grid()`.
 
 ---
-### `02 BANDAS - Data Cleaning.R`
+
+### `02_Data_Cleaning.R`
+
+> The core concepts covered in this script are explained in the accompanying presentation **`02_DataCleaningAndManagement.pdf`**.
 
 This script takes the raw dataset (`Dataset_Teachers.csv`) and produces a cleaned version ready for analysis. Students were instructed to filter the data to their assigned city; the provided example uses **Mittelsachsen_Kreis**.
 
@@ -46,7 +65,9 @@ The cleaned dataset is exported as `Cleaned_Dataset_Mittelsachsen_Kreis.csv`.
 
 ---
 
-### `03 BANDAS - Regressions and Predictions.R`
+### `03_Regressions_and_Predictions.R`
+
+> The core concepts covered in this script are explained in the accompanying presentation **`03_RegressionAnalysis.pdf`**.
 
 This script covers the modelling stage of the project. It loads the cleaned dataset and walks students through training, evaluating, and critically assessing linear regression models.
 
